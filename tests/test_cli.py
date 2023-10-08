@@ -14,12 +14,20 @@ from world_path_viz import cli
     [
         (["--help"], "Usage: main [OPTIONS]"),
         (["--version"], f"main, version { world_path_viz.__version__ }\n"),
-        # (
-        #       ["40.7128,-74.0060", "37.7749,-122.4194",
-        #       "--algo", "dijkstra", "--output", "test.gif"],
-        #       "Processing... request for 40.7128,-74.0060 to 37.7749,-122.4194 "
-        #       "using dijkstra algorithm\n",
-        # )
+        (
+            [
+                "40.7128,-74.0060",
+                "37.7749,-122.4194",
+                "--algo",
+                "dijkstra",
+                "--output",
+                "test.gif",
+            ],
+            (
+                "Processing... request for 40.7128,-74.0060 to 37.7749,-122.4194 "
+                "using dijkstra algorithm\n"
+            ),
+        ),
     ],
 )
 def test_command_line_interface(options: List[str], expected: str) -> None:
