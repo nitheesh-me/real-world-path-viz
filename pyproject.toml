@@ -25,7 +25,7 @@ classifiers=[
     "Private :: Do not Upload"
 ]
 packages = [
-    { include = "world_path_viz", from = "src" },
+    { include = "world_path_viz", from = "." },
 ]
 
 
@@ -84,7 +84,7 @@ sphinx = "^7.0.1"
 recommonmark = "^0.7.1"
 
 [tool.coverage.paths]
-source = ["src", "*/site-packages"]
+source = ["world_path_viz", "*/site-packages"]
 
 [tool.coverage.run]
 branch = true
