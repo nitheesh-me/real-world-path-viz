@@ -1,2 +1,2 @@
-sphinx==7.0.1
+sphinx==7.1.2;          python_version >= '3.8' and python_version < '3.12'
 recommonmark==0.7.1
